@@ -9,13 +9,13 @@ library(shiny)
 source("./R/f_cluster_Compra.R")
 df_compr <- f_cluster_Compra("06.2015")
 shinyUI(pageWithSidebar(
-    headerPanel('Análise de cluster de compras'),
+    headerPanel('Análise de cluster de Compras'),
     sidebarPanel(
         selectInput('xcol', 'Variável X', names(df_compr),
                     selected=names(df_compr)[[4]]),
-        selectInput('ycol', 'variável Y', names(df_compr),
+        selectInput('ycol', 'Variável Y', names(df_compr),
                     selected=names(df_compr)[[5]]),
-        numericInput('clusters', 'Cluster count', 3,
+        numericInput('clusters', 'Número de Agrupamentos', 3,
                      min = 1, max = 9)
     ),
     mainPanel(
