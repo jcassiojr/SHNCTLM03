@@ -1,18 +1,18 @@
 # carrega dados de CarteCArtoes para análise de cluster
 f_cluster_Compra <- function(mm_aaaa)
 { 
-    if (!requireNamespace("openxlsx", quietly = TRUE)) {
-        stop("openxlsx needed for this function to work. Please install it.",
-             call. = FALSE)
-    } else {
-        if(!require(openxlsx)){install.packages("openxlsx")}
-    }  
-    if (!requireNamespace("dplyr", quietly = TRUE)) {
-        stop("dplyr needed for this function to work. Please install it.",
-             call. = FALSE)
-    } else {
-        if(!require(dplyr)){install.packages("dplyr")}
-    }  
+    #if (!requireNamespace("openxlsx", quietly = TRUE)) {
+    #    stop("openxlsx needed for this function to work. Please install it.",
+    #         call. = FALSE)
+    #} else {
+    #    if(!require(openxlsx)){install.packages("openxlsx")}
+    #}  
+    #if (!requireNamespace("dplyr", quietly = TRUE)) {
+    #    stop("dplyr needed for this function to work. Please install it.",
+    #         call. = FALSE)
+    #} else {
+    #    if(!require(dplyr)){install.packages("dplyr")}
+    #}  
     # mm_aaaa <- "06.2015"
     # le arquivo cartecartoes
     filein1 <- paste0("./tidydata/", mm_aaaa,"/tidyCarteProd.csv")
